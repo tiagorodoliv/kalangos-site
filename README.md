@@ -26,6 +26,9 @@ O `publicar.sh` nunca apaga `/apt` (repositório de atualizações), `/download`
 - As capturas em `public/assets/img/*.webp` saem do `cargo run --example snapshot` do
   repositório principal (`target/snapshots/`), reduzidas para 1600 px de largura.
 - Texto novo vai nas duas páginas. O inglês é a página principal.
+- Doação (seção `#donate`): PIX com QR Code gerado por `tools/gerar_pix.py` (BR Code
+  estático, sem valor; precisa do `segno`). Mudou a chave: rode de novo e troque o código
+  nos dois `data-copy` das páginas.
 - Sem rastreadores, cookies nem fontes de terceiros: tudo é servido daqui.
 
 ## Licença

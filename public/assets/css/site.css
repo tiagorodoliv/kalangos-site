@@ -189,3 +189,20 @@ footer p { margin: 0 0 6px; max-width: 62ch; }
 footer nav { display: flex; gap: 20px; flex-wrap: wrap; }
 footer nav a { color: var(--muted); }
 footer nav a:hover { color: var(--text); }
+
+/* ------------------------------------------------------------ doação */
+.muted { color: var(--muted); }
+.small { font-size: 14px; }
+.pix { display: flex; gap: 28px; align-items: center; }
+.pix .qr {
+  width: 212px; height: 212px; flex: none;
+  border-radius: 12px; background: #fff; padding: 6px;
+}
+.pix p.muted { margin: 0 0 20px; font-size: 15.5px; }
+.pix .key { margin: 18px 0 0; font-size: 13.5px; color: var(--muted); overflow-wrap: anywhere; }
+.pix .key code { font-size: 12.5px; }
+@media (max-width: 560px) { .pix { flex-direction: column; align-items: flex-start; } }
+.help { margin: 0 0 18px; padding-left: 20px; color: var(--muted); font-size: 15.5px; }
+.help li { margin-bottom: 8px; }
+.help b { color: var(--text); font-weight: 600; }
+button.btn { cursor: pointer; }
