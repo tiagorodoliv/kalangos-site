@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KalangOS: um Linux leve e bonito</title>
+<meta name="description" content="KalangOS é um sistema operacional livre e gratuito baseado no Debian 13, com uma área de trabalho própria e rápida feita em Rust. Feito no Brasil, para qualquer computador, inclusive os antigos.">
+<link rel="canonical" href="https://kalangos.org/pt/">
+<link rel="alternate" hreflang="en" href="https://kalangos.org/">
+<link rel="alternate" hreflang="pt-BR" href="https://kalangos.org/pt/">
+<link rel="alternate" hreflang="x-default" href="https://kalangos.org/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/assets/img/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/icon-192.png">
+<meta name="theme-color" content="#07090d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KalangOS">
+<meta property="og:description" content="Um Linux leve e bonito, baseado no Debian 13. Livre e gratuito.">
+<meta property="og:image" content="https://kalangos.org/assets/img/og.jpg">
+<meta property="og:url" content="https://kalangos.org/pt/">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/assets/fonts/Inter-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/pt/"><img src="/assets/img/icon-64.png" alt="">KalangOS</a>
+    <ul>
+      <li><a href="#features">Recursos</a></li>
+      <li><a href="#screenshots">Telas</a></li>
+      <li><a href="#download">Baixar</a></li>
+      <li><a href="#community">Comunidade</a></li>
+    </ul>
+    <a class="lang" href="/" hreflang="en" lang="en" title="View in English">EN</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <img class="hero-icon" src="/assets/img/icon-192.png" alt="Ícone do KalangOS" width="88" height="88">
+    <h1>Um Linux <em>leve</em>, bonito e fácil de usar</h1>
+    <p class="lead">KalangOS é um sistema operacional livre e gratuito baseado no Debian&nbsp;13, com uma área de trabalho própria feita em Rust. Feito no Brasil, para qualquer computador, inclusive os antigos.</p>
+    <div class="cta">
+      <a class="btn primary" href="#download">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
+        Baixar
+      </a>
+      <a class="btn" href="https://github.com/tiagorodoliv/kalango_os">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+        Código-fonte
+      </a>
+    </div>
+    <p class="status"><b>●</b> Versão 0.1 em testes</p>
+    <div class="shot"><img src="/assets/img/desktop.webp" alt="Área de trabalho do KalangOS com o gerenciador de arquivos, um terminal e a dock" width="1600" height="1000"></div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <p class="label">Recursos</p>
+    <h2>Tudo o que você precisa, sem complicação</h2>
+    <p class="intro">Uma área de trabalho completa, que parece familiar desde o primeiro minuto, sobre uma base sólida com mais de 30 anos de estrada.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Leve em computador antigo</h3>
+        <p>A área de trabalho se desenha sem placa de vídeo quando precisa. Num computador de 2&nbsp;GB, usa cerca de 32&nbsp;MB de memória.</p>
+      </article>
+      <article class="card" style="--c: var(--pink)">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a3 3 0 1 0 0 5"/></svg></div>
+        <h3>Debian 13 por baixo</h3>
+        <p>A estabilidade e as atualizações de segurança do Debian "trixie", com todos os programas dele à disposição.</p>
+      </article>
+      <article class="card" style="--c: var(--amber)">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></div>
+        <h3>Loja de apps</h3>
+        <p>Milhares de apps do Flathub, instalados com um clique. Sem terminal.</p>
+      </article>
+      <article class="card" style="--c: var(--green)">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></div>
+        <h3>Atualizações sem dor de cabeça</h3>
+        <p>As atualizações do sistema e da área de trabalho chegam de um repositório assinado e se instalam pelas Configurações, com o progresso na tela.</p>
+      </article>
+      <article class="card" style="--c: var(--purple)">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18c1 0 1.5-.8 1.5-1.5 0-1.5-1-1.5-1-3 0-1 .8-1.5 2-1.5H17a4 4 0 0 0 4-4"/><circle cx="8" cy="11" r="1"/><circle cx="11" cy="7.5" r="1"/><circle cx="15.5" cy="8" r="1"/></svg></div>
+        <h3>Do seu jeito</h3>
+        <p>Temas escuro, OLED e claro, seis cores de destaque, temas de ícones, papéis de parede e cinco modelos de dock, tudo mudando na hora.</p>
+      </article>
+      <article class="card" style="--c: var(--blue)">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.9 1.2V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-2.9-1.2l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.7 1.7 0 0 0 3.1 14H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.2-2.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.7 1.7 0 0 0 10 3.1V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 2.9 1.2l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1A1.7 1.7 0 0 0 20.9 10H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></div>
+        <h3>Tudo nas Configurações</h3>
+        <p>Wi-Fi, Bluetooth, VPN (WireGuard e OpenVPN), impressoras, vários monitores, usuários, energia e compartilhamento de arquivos com o Windows.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div>
+        <h3>Pronto para trabalhar</h3>
+        <p>O LibreOffice abre arquivos do Word, Excel e PowerPoint, PDFs abrem na hora e dois cliques extraem arquivos zip.</p>
+      </article>
+      <article class="card" style="--c: var(--green)">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Funciona com Secure Boot</h3>
+        <p>Liga com o Secure Boot ativado ou não, em BIOS ou UEFI, e se instala ao lado do Windows com um instalador guiado.</p>
+      </article>
+      <article class="card" style="--c: var(--amber)">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z"/></svg></div>
+        <h3>Português e inglês</h3>
+        <p>A área de trabalho inteira fala os dois idiomas, e dá para trocar o idioma e o teclado nas Configurações.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="screenshots">
+  <div class="wrap">
+    <p class="label">Telas</p>
+    <h2>Dê uma olhada</h2>
+    <p class="intro">Todas as telas abaixo são desenhadas pela própria área de trabalho do KalangOS.</p>
+    <div class="tabs" role="tablist" aria-label="Telas">
+      <button role="tab" aria-selected="true" aria-controls="g-launcher">Menu de apps</button>
+      <button role="tab" aria-selected="false" aria-controls="g-quick">Painel rápido</button>
+      <button role="tab" aria-selected="false" aria-controls="g-appearance">Aparência</button>
+      <button role="tab" aria-selected="false" aria-controls="g-light">Tema claro</button>
+      <button role="tab" aria-selected="false" aria-controls="g-displays">Monitores</button>
+      <button role="tab" aria-selected="false" aria-controls="g-login">Tela de login</button>
+    </div>
+    <div class="gallery">
+      <figure id="g-launcher" role="tabpanel"><div class="shot"><img src="/assets/img/launcher.webp" alt="Menu de apps com os fixados e os arquivos recentes" width="1600" height="1000" loading="lazy"></div><figcaption>Aperte a tecla Super para buscar apps, arquivos e comandos.</figcaption></figure>
+      <figure id="g-quick" role="tabpanel" hidden><div class="shot"><img src="/assets/img/quick-settings.webp" alt="Painel rápido" width="1600" height="1000" loading="lazy"></div><figcaption>Volume, brilho, Wi-Fi, Bluetooth e energia a um clique da barra superior.</figcaption></figure>
+      <figure id="g-appearance" role="tabpanel" hidden><div class="shot"><img src="/assets/img/appearance.webp" alt="Configurações de aparência" width="1600" height="1000" loading="lazy"></div><figcaption>Temas, cores de destaque e papéis de parede mudam o sistema inteiro na hora.</figcaption></figure>
+      <figure id="g-light" role="tabpanel" hidden><div class="shot"><img src="/assets/img/light.webp" alt="Área de trabalho com o tema claro e destaque roxo" width="1600" height="1000" loading="lazy"></div><figcaption>Prefere claro? O tema claro está a um clique.</figcaption></figure>
+      <figure id="g-displays" role="tabpanel" hidden><div class="shot"><img src="/assets/img/displays.webp" alt="Configurações de monitores com duas telas" width="1600" height="1000" loading="lazy"></div><figcaption>Arrume vários monitores arrastando. Se a tela apagar, a mudança volta sozinha.</figcaption></figure>
+      <figure id="g-login" role="tabpanel" hidden><div class="shot"><img src="/assets/img/login.webp" alt="Tela de login" width="1600" height="1000" loading="lazy"></div><figcaption>Uma tela de login no mesmo estilo do resto do sistema.</figcaption></figure>
+    </div>
+    <div class="docks">
+      <figure><img src="/assets/img/dock-3d.webp" alt="Dock com ícones 3D e cantos de pílula" loading="lazy"><figcaption>Dock de vidro 3D</figcaption></figure>
+      <figure><img src="/assets/img/dock-tiles.webp" alt="Dock com ladrilhos coloridos" loading="lazy"><figcaption>Ladrilhos coloridos</figcaption></figure>
+      <figure><img src="/assets/img/dock-minimal.webp" alt="Dock mínima e transparente" loading="lazy"><figcaption>Mínima</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="wrap">
+    <p class="label">Baixar</p>
+    <h2>Experimente sem instalar</h2>
+    <p class="intro">Ligue o KalangOS por um pendrive para experimentar. Se gostar, o instalador está ali na área de trabalho.</p>
+    <div class="download">
+      <div class="card">
+        <h3 style="margin-top:0">KalangOS 0.1 <span style="color:var(--amber);font:400 13px var(--mono)">· em testes</span></h3>
+        <p style="color:var(--muted);margin:0 0 22px">A primeira imagem pública está sendo testada em computadores de verdade. Acompanhe o projeto no GitHub para saber quando sair.</p>
+        <div class="cta" style="justify-content:flex-start">
+          <a class="btn primary" aria-disabled="true">Em breve</a>
+          <a class="btn" href="https://github.com/tiagorodoliv/kalango_os/releases">Versões no GitHub</a>
+        </div>
+        <ol class="steps">
+          <li><b>Grave a imagem num pendrive</b> (8&nbsp;GB ou mais) com o balenaEtcher, o Ventoy ou o Rufus.</li>
+          <li><b>Ligue o computador pelo pendrive.</b> A tecla do menu de boot costuma ser F12, F9 ou Esc.</li>
+          <li><b>Experimente à vontade</b> e, quando quiser, abra “Instalar KalangOS” no menu de apps.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Requisitos</h3>
+        <ul class="req">
+          <li>Processador <span>64 bits (x86-64)</span></li>
+          <li>Memória <span>2 GB (4 GB recomendado)</span></li>
+          <li>Disco <span>20 GB</span></li>
+          <li>Firmware <span>BIOS ou UEFI, com ou sem Secure Boot</span></li>
+          <li>Vídeo <span>Qualquer um; não precisa de placa 3D</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="community" class="community">
+  <div class="wrap">
+    <p class="label">Comunidade</p>
+    <h2>Feito às claras</h2>
+    <p class="intro">O KalangOS é software livre, sob a GPL. Cada relato de bug, ideia e linha de código ajuda.</p>
+    <div class="grid">
+      <article class="card" style="--c: var(--pink)">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M8 6V4m8 2V4M7 9h10v5a5 5 0 0 1-10 0z"/><path d="M3 13h4m10 0h4M4 7l3 2m13-2l-3 2M4 19l3-2m13 2l-3-2"/></svg></div>
+        <h3>Relatar um bug</h3>
+        <p>Algo deu errado? Conte o que aconteceu e em qual computador.</p>
+        <a class="more" href="https://github.com/tiagorodoliv/kalango_os/issues/new/choose">Abrir um relato →</a>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></div>
+        <h3>Ideias e dúvidas</h3>
+        <p>Sugira recursos, peça ajuda e conte como você usa o KalangOS.</p>
+        <a class="more" href="https://github.com/tiagorodoliv/kalango_os/discussions">Participar das discussões →</a>
+      </article>
+      <article class="card" style="--c: var(--purple)">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+        <h3>Contribuir</h3>
+        <p>Código em Rust e Slint, traduções e testes em computadores diferentes são todos bem-vindos.</p>
+        <a class="more" href="https://github.com/tiagorodoliv/kalango_os/blob/main/CONTRIBUTING.md">Ler o guia →</a>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p>© 2026 Projeto KalangOS. Software distribuído sob a GNU GPL 3.0 ou posterior.</p>
+      <p>KalangOS e seu logotipo são marcas do projeto. Debian é marca registrada da Software in the Public Interest, Inc. O KalangOS não é afiliado ao projeto Debian.</p>
+    </div>
+    <nav aria-label="Rodapé">
+      <a href="https://github.com/tiagorodoliv/kalango_os">GitHub</a>
+      <a href="https://github.com/tiagorodoliv/kalango_os/blob/main/TRADEMARKS.md">Marca</a>
+      <a href="/" hreflang="en">English</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
