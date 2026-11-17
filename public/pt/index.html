@@ -28,12 +28,13 @@
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="/pt/"><img src="/assets/img/icon-64.png" alt="">KalangOS</a>
-    <ul>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu" data-open="Menu" data-close="Fechar menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <ul id="nav-links">
       <li><a href="#features">Recursos</a></li>
       <li><a href="#screenshots">Telas</a></li>
       <li><a href="#download">Baixar</a></li>
-      <li><a href="#community">Comunidade</a></li>
       <li><a href="#donate">Apoiar</a></li>
+      <li><a href="#community">Comunidade</a></li>
     </ul>
     <a class="lang" href="/" hreflang="en" lang="en" title="View in English">EN</a>
   </div>
@@ -56,7 +57,7 @@
       </a>
     </div>
     <p class="status"><b>●</b> Versão 0.1 em testes</p>
-    <div class="shot"><img src="/assets/img/desktop.webp" alt="Área de trabalho do KalangOS com o gerenciador de arquivos, um terminal e a dock" width="1600" height="1000"></div>
+    <div class="shot"><img src="/assets/img/desktop.webp" alt="Área de trabalho do KalangOS com a dock e o papel de parede do Kalango" width="1366" height="768"></div>
   </div>
 </section>
 
@@ -119,27 +120,20 @@
   <div class="wrap">
     <p class="label">Telas</p>
     <h2>Dê uma olhada</h2>
-    <p class="intro">Todas as telas abaixo são desenhadas pela própria área de trabalho do KalangOS.</p>
+    <p class="intro">Capturas reais do KalangOS rodando num notebook.</p>
     <div class="tabs" role="tablist" aria-label="Telas">
       <button role="tab" aria-selected="true" aria-controls="g-launcher">Menu de apps</button>
       <button role="tab" aria-selected="false" aria-controls="g-quick">Painel rápido</button>
       <button role="tab" aria-selected="false" aria-controls="g-appearance">Aparência</button>
-      <button role="tab" aria-selected="false" aria-controls="g-light">Tema claro</button>
       <button role="tab" aria-selected="false" aria-controls="g-displays">Monitores</button>
       <button role="tab" aria-selected="false" aria-controls="g-login">Tela de login</button>
     </div>
     <div class="gallery">
-      <figure id="g-launcher" role="tabpanel"><div class="shot"><img src="/assets/img/launcher.webp" alt="Menu de apps com os fixados e os arquivos recentes" width="1600" height="1000" loading="lazy"></div><figcaption>Aperte a tecla Super para buscar apps, arquivos e comandos.</figcaption></figure>
-      <figure id="g-quick" role="tabpanel" hidden><div class="shot"><img src="/assets/img/quick-settings.webp" alt="Painel rápido" width="1600" height="1000" loading="lazy"></div><figcaption>Volume, brilho, Wi-Fi, Bluetooth e energia a um clique da barra superior.</figcaption></figure>
-      <figure id="g-appearance" role="tabpanel" hidden><div class="shot"><img src="/assets/img/appearance.webp" alt="Configurações de aparência" width="1600" height="1000" loading="lazy"></div><figcaption>Temas, cores de destaque e papéis de parede mudam o sistema inteiro na hora.</figcaption></figure>
-      <figure id="g-light" role="tabpanel" hidden><div class="shot"><img src="/assets/img/light.webp" alt="Área de trabalho com o tema claro e destaque roxo" width="1600" height="1000" loading="lazy"></div><figcaption>Prefere claro? O tema claro está a um clique.</figcaption></figure>
-      <figure id="g-displays" role="tabpanel" hidden><div class="shot"><img src="/assets/img/displays.webp" alt="Configurações de monitores com duas telas" width="1600" height="1000" loading="lazy"></div><figcaption>Arrume vários monitores arrastando. Se a tela apagar, a mudança volta sozinha.</figcaption></figure>
-      <figure id="g-login" role="tabpanel" hidden><div class="shot"><img src="/assets/img/login.webp" alt="Tela de login" width="1600" height="1000" loading="lazy"></div><figcaption>Uma tela de login no mesmo estilo do resto do sistema.</figcaption></figure>
-    </div>
-    <div class="docks">
-      <figure><img src="/assets/img/dock-3d.webp" alt="Dock com ícones 3D e cantos de pílula" loading="lazy"><figcaption>Dock de vidro 3D</figcaption></figure>
-      <figure><img src="/assets/img/dock-tiles.webp" alt="Dock com ladrilhos coloridos" loading="lazy"><figcaption>Ladrilhos coloridos</figcaption></figure>
-      <figure><img src="/assets/img/dock-minimal.webp" alt="Dock mínima e transparente" loading="lazy"><figcaption>Mínima</figcaption></figure>
+      <figure id="g-launcher" role="tabpanel"><div class="shot"><img src="/assets/img/launcher.webp" alt="Menu de apps com os fixados e os arquivos recentes" width="1366" height="768" loading="lazy"></div><figcaption>Aperte a tecla Super para buscar apps, arquivos e comandos.</figcaption></figure>
+      <figure id="g-quick" role="tabpanel" hidden><div class="shot"><img src="/assets/img/quick-settings.webp" alt="Painel rápido" width="1366" height="768" loading="lazy"></div><figcaption>Volume, brilho, Wi-Fi, Bluetooth e energia a um clique da barra superior.</figcaption></figure>
+      <figure id="g-appearance" role="tabpanel" hidden><div class="shot"><img src="/assets/img/appearance.webp" alt="Configurações de aparência" width="1366" height="768" loading="lazy"></div><figcaption>Tema de vidro, OLED ou claro e seis cores de destaque mudam o sistema inteiro na hora.</figcaption></figure>
+      <figure id="g-displays" role="tabpanel" hidden><div class="shot"><img src="/assets/img/displays.webp" alt="Configurações de monitores" width="1366" height="768" loading="lazy"></div><figcaption>Arrume vários monitores arrastando. Se a tela apagar, a mudança volta sozinha.</figcaption></figure>
+      <figure id="g-login" role="tabpanel" hidden><div class="shot"><img src="/assets/img/login.webp" alt="Tela de login" width="1366" height="768" loading="lazy"></div><figcaption>Uma tela de login no mesmo estilo do resto do sistema.</figcaption></figure>
     </div>
   </div>
 </section>
@@ -254,6 +248,7 @@
   </div>
 </footer>
 
+<p class="sr-only" role="status" aria-live="polite" id="live"></p>
 <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

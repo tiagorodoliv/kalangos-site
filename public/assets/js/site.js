@@ -39,6 +39,39 @@ document.querySelectorAll('button.copy').forEach((btn) => {
       area.remove();
     }
     btn.textContent = btn.dataset.done;
+    const live = document.getElementById('live');
+    if (live) live.textContent = btn.dataset.done;
     setTimeout(() => { btn.textContent = label; }, 2000);
   });
 });
+
+// Menu do celular: abre/fecha, fecha ao escolher um link ou com Esc.
+const nav = document.querySelector('.nav');
+const menuBtn = nav && nav.querySelector('.menu');
+if (menuBtn) {
+  const setOpen = (open) => {
+    nav.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.setAttribute('aria-label', open ? menuBtn.dataset.close : menuBtn.dataset.open);
+  };
+  menuBtn.addEventListener('click', () => setOpen(!nav.classList.contains('open')));
+  nav.querySelectorAll('ul a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav.classList.contains('open')) { setOpen(false); menuBtn.focus(); }
+  });
+}
+
+// Destaca no menu a seção que está na tela.
+const links = new Map([...document.querySelectorAll('.nav ul a[href^="#"]')]
+  .map((a) => [a.getAttribute('href').slice(1), a]));
+if ('IntersectionObserver' in window && links.size) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => {
+      if (!en.isIntersecting) return;
+      links.forEach((a) => a.removeAttribute('aria-current'));
+      const a = links.get(en.target.id);
+      if (a) a.setAttribute('aria-current', 'true');
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  links.forEach((_, id) => { const s = document.getElementById(id); if (s) io.observe(s); });
+}

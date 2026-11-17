@@ -23,8 +23,9 @@ O `publicar.sh` nunca apaga `/apt` (repositório de atualizações), `/download`
 ## Como está organizado
 
 - Cores e fontes iguais às do sistema (`ui/theme.slint` do repositório principal).
-- As capturas em `public/assets/img/*.webp` saem do `cargo run --example snapshot` do
-  repositório principal (`target/snapshots/`), reduzidas para 1600 px de largura.
+- As capturas em `public/assets/img/*.webp` são do sistema real (notebook 1366×768, `grim`
+  pelo SSH), não do `examples/snapshot`, que desenha o protótipo. Antes de publicar, tire
+  dados pessoais (nome, arquivos recentes, redes Wi-Fi). O `og.jpg` é recorte do desktop.
 - Texto novo vai nas duas páginas. O inglês é a página principal.
 - Doação (seção `#donate`): PIX com QR Code gerado por `tools/gerar_pix.py` (BR Code
   estático, sem valor; precisa do `segno`). Mudou a chave: rode de novo e troque o código

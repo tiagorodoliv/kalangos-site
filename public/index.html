@@ -27,12 +27,13 @@
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="/"><img src="/assets/img/icon-64.png" alt="">KalangOS</a>
-    <ul>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu" data-open="Menu" data-close="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <ul id="nav-links">
       <li><a href="#features">Features</a></li>
       <li><a href="#screenshots">Screenshots</a></li>
       <li><a href="#download">Download</a></li>
-      <li><a href="#community">Community</a></li>
       <li><a href="#donate">Donate</a></li>
+      <li><a href="#community">Community</a></li>
     </ul>
     <a class="lang" href="/pt/" hreflang="pt-BR" lang="pt-BR" title="Ver em português">PT</a>
   </div>
@@ -55,7 +56,7 @@
       </a>
     </div>
     <p class="status"><b>●</b> Version 0.1 in testing</p>
-    <div class="shot"><img src="/assets/img/desktop.webp" alt="KalangOS desktop with the file manager, a terminal and the dock" width="1600" height="1000"></div>
+    <div class="shot"><img src="/assets/img/desktop.webp" alt="KalangOS desktop with the dock and the Kalango wallpaper" width="1366" height="768"></div>
   </div>
 </section>
 
@@ -118,27 +119,20 @@
   <div class="wrap">
     <p class="label">Screenshots</p>
     <h2>Take a look around</h2>
-    <p class="intro">Every screen below is drawn by the KalangOS desktop itself.</p>
+    <p class="intro">Real screenshots of KalangOS running on a laptop.</p>
     <div class="tabs" role="tablist" aria-label="Screenshots">
       <button role="tab" aria-selected="true" aria-controls="g-launcher">App menu</button>
       <button role="tab" aria-selected="false" aria-controls="g-quick">Quick settings</button>
       <button role="tab" aria-selected="false" aria-controls="g-appearance">Appearance</button>
-      <button role="tab" aria-selected="false" aria-controls="g-light">Light theme</button>
       <button role="tab" aria-selected="false" aria-controls="g-displays">Displays</button>
       <button role="tab" aria-selected="false" aria-controls="g-login">Login</button>
     </div>
     <div class="gallery">
-      <figure id="g-launcher" role="tabpanel"><div class="shot"><img src="/assets/img/launcher.webp" alt="App menu with pinned apps and recent files" width="1600" height="1000" loading="lazy"></div><figcaption>Press the Super key to search apps, files and commands.</figcaption></figure>
-      <figure id="g-quick" role="tabpanel" hidden><div class="shot"><img src="/assets/img/quick-settings.webp" alt="Quick settings panel" width="1600" height="1000" loading="lazy"></div><figcaption>Volume, brightness, Wi-Fi, Bluetooth and power, one click from the top bar.</figcaption></figure>
-      <figure id="g-appearance" role="tabpanel" hidden><div class="shot"><img src="/assets/img/appearance.webp" alt="Appearance settings" width="1600" height="1000" loading="lazy"></div><figcaption>Themes, accent colors and wallpapers change the whole system instantly.</figcaption></figure>
-      <figure id="g-light" role="tabpanel" hidden><div class="shot"><img src="/assets/img/light.webp" alt="Desktop with the light theme and purple accent" width="1600" height="1000" loading="lazy"></div><figcaption>Prefer it bright? The light theme is one click away.</figcaption></figure>
-      <figure id="g-displays" role="tabpanel" hidden><div class="shot"><img src="/assets/img/displays.webp" alt="Display settings with two monitors" width="1600" height="1000" loading="lazy"></div><figcaption>Arrange multiple monitors by dragging them. Changes revert by themselves if the screen goes black.</figcaption></figure>
-      <figure id="g-login" role="tabpanel" hidden><div class="shot"><img src="/assets/img/login.webp" alt="Login screen" width="1600" height="1000" loading="lazy"></div><figcaption>A login screen that matches the rest of the system.</figcaption></figure>
-    </div>
-    <div class="docks">
-      <figure><img src="/assets/img/dock-3d.webp" alt="Dock with 3D icons and pill corners" loading="lazy"><figcaption>3D glass dock</figcaption></figure>
-      <figure><img src="/assets/img/dock-tiles.webp" alt="Dock with colored tiles" loading="lazy"><figcaption>Colored tiles</figcaption></figure>
-      <figure><img src="/assets/img/dock-minimal.webp" alt="Minimal transparent dock" loading="lazy"><figcaption>Minimal</figcaption></figure>
+      <figure id="g-launcher" role="tabpanel"><div class="shot"><img src="/assets/img/launcher.webp" alt="App menu with pinned apps and recent files" width="1366" height="768" loading="lazy"></div><figcaption>Press the Super key to search apps, files and commands.</figcaption></figure>
+      <figure id="g-quick" role="tabpanel" hidden><div class="shot"><img src="/assets/img/quick-settings.webp" alt="Quick settings panel" width="1366" height="768" loading="lazy"></div><figcaption>Volume, brightness, Wi-Fi, Bluetooth and power, one click from the top bar.</figcaption></figure>
+      <figure id="g-appearance" role="tabpanel" hidden><div class="shot"><img src="/assets/img/appearance.webp" alt="Appearance settings" width="1366" height="768" loading="lazy"></div><figcaption>Glass, OLED or light themes and six accent colors change the whole system instantly.</figcaption></figure>
+      <figure id="g-displays" role="tabpanel" hidden><div class="shot"><img src="/assets/img/displays.webp" alt="Display settings" width="1366" height="768" loading="lazy"></div><figcaption>Arrange multiple monitors by dragging them. Changes revert by themselves if the screen goes black.</figcaption></figure>
+      <figure id="g-login" role="tabpanel" hidden><div class="shot"><img src="/assets/img/login.webp" alt="Login screen" width="1366" height="768" loading="lazy"></div><figcaption>A login screen that matches the rest of the system.</figcaption></figure>
     </div>
   </div>
 </section>
@@ -253,6 +247,7 @@
   </div>
 </footer>
 
+<p class="sr-only" role="status" aria-live="polite" id="live"></p>
 <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

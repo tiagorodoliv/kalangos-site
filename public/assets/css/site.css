@@ -79,7 +79,25 @@ a:hover { text-decoration: underline; }
   border: 1px solid var(--border); border-radius: 8px; padding: 5px 10px;
 }
 .lang:hover { border-color: var(--accent); text-decoration: none; }
-@media (max-width: 760px) { .nav ul { display: none; } .lang { margin-left: auto; } }
+.nav ul a[aria-current="true"] { color: var(--accent); }
+.menu {
+  display: none; width: 40px; height: 40px; place-items: center; padding: 0;
+  background: var(--tile); color: var(--text); border: 1px solid var(--border); border-radius: 10px; cursor: pointer;
+}
+.menu svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+@media (max-width: 760px) {
+  .nav .wrap { gap: 12px; }
+  .lang { margin-left: auto; }
+  .menu { display: grid; order: 3; }
+  .nav ul {
+    display: none; position: absolute; top: 60px; left: 0; right: 0;
+    flex-direction: column; gap: 0; margin: 0; padding: 8px 16px 16px;
+    background: #07090df5; backdrop-filter: blur(12px); border-bottom: 1px solid var(--border);
+  }
+  .nav.open ul { display: flex; }
+  .nav ul a { display: block; padding: 12px 4px; font-size: 17px; }
+}
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* ------------------------------------------------------------ botões */
 .btn {
@@ -154,10 +172,6 @@ section .intro { color: var(--muted); max-width: 640px; margin: 0 0 44px; font-s
 .gallery figcaption { color: var(--muted); font-size: 15px; margin-top: 14px; text-align: center; }
 .gallery .shot { margin: 0; }
 
-.docks { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 16px; }
-.docks figure { margin: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--panel); }
-.docks img { width: 100%; }
-.docks figcaption { padding: 10px 14px; font-size: 14px; color: var(--muted); }
 
 /* ------------------------------------------------------------ download */
 .download { display: grid; gap: 20px; grid-template-columns: 1.2fr 1fr; align-items: start; }
